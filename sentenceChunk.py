@@ -49,10 +49,10 @@ def sentence_chunk_documents(
 
             chunks.append(Document(text=part, metadata=m))
 
-    # for i, chunk in enumerate(chunks):
-    #     print(f"第{i+1}个分块")
-    #     print(chunk.metadata)
-    #     print(chunk.text)
+    for i, chunk in enumerate(chunks):
+        print(f"第{i+1}个分块")
+        print(chunk.metadata)
+        print(chunk.text)
     return chunks
 
 if __name__ == "__main__":
